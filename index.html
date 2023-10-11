@@ -6,51 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- CSS -->
     <style>
+
         .btn {
-            margin-top: 10px;
-        }
-        .btn {
+            margin-top: 30px;
             background-color: rgb(61, 61, 63);
             color: white;
+            width: 100%;
         }
-        .form-control{
-            margin-top:10%;
+
+        #igual {
+            background-color: brown;
+        }
+
+        #clear {
+            background-color: blue;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
         }
     </style>
     <title>Calculadora</title>
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row justify-content-md-center">
-            <div class="col-6">
-                <div class="form-floating">
-                    <input type="text" class="form-control">
-                    <label for="floatingInput">Pantalla</label>
+    <!-- Titulo -->
+    <header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>CALCULADORA</h1>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div>
-                    <button type="button" class="btn">+</button>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <table class="table">
+                        <!-- Pantalla -->
+                        <thead>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-text" id="mostrar"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </thead>
+                        <!-- Operadores -->
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn">+</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn">-</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn">*</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn">/</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn" id="igual">=</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn" id="clear">C</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col">
-                <button type="button" class="btn">-</button>
-            </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn">*</button>
-            </div>
-            <div class="col">
-                <button type="button" class="btn">/</button>
-            </div>
-        </div>
-    </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+
+    </footer>
+    <!-- JavaScript -->
+    <script src="suma.js"></script>
 </body>
 
 </html>
