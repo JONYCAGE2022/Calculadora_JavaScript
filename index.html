@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Iconos de bootstrap -->
+    <!-- <link rel="stylesheet" href="vendor\twbs\bootstrap-icons\font\bootstrap-icons.css"> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +59,7 @@
                             <tr>
                                 <td colspan="2">
                                     <div class="input-group">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" autofocus>
                                         <span class="input-group-text" id="mostrar"></span>
                                     </div>
                                 </td>
@@ -67,18 +69,18 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn">+</button>
+                                    <button type="button" class="btn" id="suma">+</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn">-</button>
+                                    <button type="button" class="btn" id="resta">-</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn">*</button>
+                                    <button type="button" class="btn" id="multiplicacion">*</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn">/</button>
+                                    <button type="button" class="btn" id="division">/</button>
                                 </td>
                             </tr>
                             <tr>
@@ -101,6 +103,11 @@
     </footer>
     <!-- JavaScript -->
     <script src="suma.js"></script>
+    <script src="resta.js"></script>
+    <script src="multiplicacion.js"></script>
+    <script src="division.js"></script>
+    <script src="limpiar.js"></script>
+    
 </body>
 
 </html>
