@@ -1,0 +1,9 @@
+Para instalar la biblioteca de JavaScript expression evaluator con npm, puedes seguir los siguientes pasos:
+
+Asegúrate de tener instalado Node.js y npm en tu máquina. Puedes verificar las versiones con los comandos node -v y npm -v.
+Crea un nuevo proyecto de Node.js o abre uno existente. Puedes usar el comando npm init para crear un archivo package.json que contenga la información de tu proyecto.
+Abre una terminal en la carpeta de tu proyecto y ejecuta el comando npm install expression-eval. Esto instalará la biblioteca en la carpeta node_modules y la agregará como una dependencia en tu archivo package.json.
+Para usar la biblioteca en tu código, puedes importarla con el comando const Parser = require('expression-eval');. Luego, puedes usar el método Parser.evaluate() para evaluar una expresión matemática representada como una cadena. Por ejemplo:
+const Parser = require('expression-eval');
+const resultado = Parser.evaluate('2+3-2*2'); // resultado es 1
+console.log(resultado);
