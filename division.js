@@ -1,7 +1,7 @@
 /* Funcion multiplicacion */
 botonIgual.addEventListener("click", function division() {
-    let datos = datosInput.value;
-    if (datos.includes("/")) {
+    let datos = getDatos();
+    if (validarDivision(datos)) {
         let numeros = datos.split("/");
         let conversionNumeros = numeros.map(cadena => parseFloat(cadena));
         let contador = 1;
@@ -9,7 +9,6 @@ botonIgual.addEventListener("click", function division() {
         numeros.forEach(elemento => {
             if (contador < conversionNumeros.length) {
                 multiTotal /= conversionNumeros[contador];
-                console.log(multiTotal);
                 contador++;
             }
         });
@@ -18,6 +17,16 @@ botonIgual.addEventListener("click", function division() {
         elemento.innerHTML = multiTotal;
     }
 });
+
+/* Valida si tiene el operador de division */
+function validarDivision(datos) {
+    if (datos.includes("/")){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 /* Agrega el simnbolo de la multiplicacion en el input */
 botonDivision.addEventListener("click", function agregardivision() {
